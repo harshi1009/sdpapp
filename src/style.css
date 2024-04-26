@@ -1,0 +1,18 @@
+/* sets base style for each page */
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    
+    /* set background image per page */
+    .home-bg {
+    background: url("C:\Users\HARISHITHA\OneDrive\Desktop\MSWD\SDPPROJECT\frontend\sdpapp\src\components\images\home.jpg") no-repeat center center fixed;
+    }
+    .about-bg {
+    background: url(images/about.bg.jpg) no-repeat center center fixed;
+    }
+    .contact-bg {
+    background: url(images/contact-bg.jpg) no-repeat center center fixed;
+    }
