@@ -25,9 +25,9 @@ function ViewSeller() {
     return (
         <>
             <AdminNavbar />
-            <div className='view-seller-container'>
+            <div class='view-seller-container'>
                 <h3>View Sellers</h3>
-                <div className='view-container'>
+                <div class='view-container'>
                     <form>
                         <input type='search' placeholder='Search Here....'
                             style={{ paddingLeft: "10px", height: "50px", width: "100%", borderRadius: "5px", border: "1px solid #ccc", outline: "none" }}

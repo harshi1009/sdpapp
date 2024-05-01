@@ -25,11 +25,11 @@ function Adminlogin() {
         try{
             await axios.post(`${config.url}/adminlogin`, {email, password})
             .then(res => {
-                if(res.data == "exist"){
+                if(res.data === "exist"){
                     alert("Login Successfully")
                     navigate('/adminhomepage', {state:{id:email}})
                 }
-                else if(res.data == "notexist"){
+                else if(res.data === "notexist"){
                     alert('Admin not Found')
                     navigate('/')
                 }

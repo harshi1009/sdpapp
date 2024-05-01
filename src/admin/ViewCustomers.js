@@ -15,7 +15,7 @@ function ViewCustomers() {
     }, [customers])
 
     const handleDelete = (id) => {
-        axios.delete(`${config.url}/deletecustomer`+id)
+        axios.delete(`${config.url}/deletecustomer/`+id)
         .then(res => {
             window.location.reload()
         })
@@ -24,9 +24,9 @@ function ViewCustomers() {
 
 
     return (
-        <div className='admin-view-customers'>
+        <div class='admin-view-customers'>
             <AdminNavbar />
-            <div className='table-container'>
+            <div class='table-container'>
                 <h3>View all Customers</h3>
                 <form>
                     <input type='search' placeholder='Search Here....' 

@@ -24,11 +24,11 @@ function AdminRegister() {
         try{
             await axios.post(`${config.url}/adminsignup`, {email, password})
             .then(res => {
-                if(res.data == "exist"){
+                if(res.data === "exist"){
                     alert("Admin already Exist ! Please Login")
                     // navigate('/adminlogin')
                 }
-                else if(res.data == "notexist"){
+                else if(res.data === "notexist"){
                     navigate('/adminhomepage', {state: {id:email}})
                 }
             })

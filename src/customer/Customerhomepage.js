@@ -3,6 +3,8 @@ import axios from 'axios'
 import CustomerNavbar from '../components/CustomerNavbar'
 import { useCart } from '../ContextReducer'
 import config from '../config'
+
+
 function Customerhomepage() {
 
   const [cart, setCart] = useCart()
@@ -34,7 +36,7 @@ function Customerhomepage() {
               return (
 
                 <div className='card-component'>
-                  <img src={`/uploads/${items.image}`} alt='' />
+                  <img src={`../../public/uploads${item.image}`} alt='' />
                   
                   <div className='right'>
                     <h5>{items.Itemname}</h5>
